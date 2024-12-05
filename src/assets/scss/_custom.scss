@@ -1,0 +1,168 @@
+/******* camps table *******/
+
+.camps {
+    .rdt_TableHeadRow {
+        .rdt_TableCol {
+            &:last-child {
+                min-width: 265px !important;
+            }
+        }
+    }
+
+    .rdt_TableBody {
+        .rdt_TableRow {
+            .rdt_TableCell {
+                &:last-child {
+                    min-width: 265px !important;
+                }
+            }
+        }
+    }
+}
+
+.fileupload {
+    position: relative;
+
+    label {
+        position: relative;
+        min-width: 169px;
+        min-height: 169px;
+
+        input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            height: 100%;
+            opacity: 0;
+        }
+
+
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 6px;
+        right: 0px;
+        margin: auto;
+        z-index: 111;
+
+    }
+
+    span {
+        display: block;
+        text-align: center;
+    }
+}
+
+.package_category {
+    p {
+        margin: 0;
+
+        &:last-child {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+
+//** combo meal */
+
+.combomeal {
+    .accordion-body {
+        .card-body {
+            overflow: auto;
+
+            table {
+                thead {
+                    tr {
+                        padding: 7px 0;
+                        border-bottom: 1px solid #eaedf1 !important;
+                        th {
+                            border-right: 1px solid #eaedf1 !important;
+                            font-weight: normal;
+
+                            &:last-child {
+                                border: none !important;
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        border-top: 1px solid #eaedf1 !important;
+
+                        &:first-child {
+                            border-top: none !important;
+                        }
+
+                        td {
+                            min-width: 80px;
+                            border-right: 1px solid #eaedf1 !important;
+
+                            &:last-child {
+                                border: none !important;
+
+                            }
+
+                            img {
+                                width: 63px;
+                                height: 63px;
+                                min-width: 63px;
+                                min-height: 63px;
+                                object-fit: cover;
+                            }
+                        }
+
+                        &:last-child {
+                            td {
+                                border-bottom: none !important;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &_popup {
+        label {
+            cursor: pointer;
+
+            .thumbnail {
+                img {
+                    height: 250px;
+                    object-fit: cover;
+
+                    @media screen and (max-width:991px) {
+                        height: 203px;
+                    }
+                }
+            }
+        }
+
+        input:checked~label {
+            .thumbnail {
+                border-color: #59e8aa !important;
+            }
+        }
+    }
+}
+
+
+.packageTable {
+    .rdt_TableCell {
+        span {
+            &:last-child {
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
